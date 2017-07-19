@@ -29,7 +29,7 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <artifactId>dblayer</artifactId>
+            <artifactId>handler</artifactId>
             <groupId>com.intelisoft.writers</groupId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
