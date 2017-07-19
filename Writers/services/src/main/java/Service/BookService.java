@@ -37,7 +37,11 @@ public class BookService {
             }
             logger.info("Transaction is crushed.");
         }
-        handler.allEntityToDesctop(books);
+        if(books!=null){
+        handler.allEntityToDesctop(books);}
+        else {
+            logger.info("books is null");
+        }
 
 
     }
@@ -61,8 +65,11 @@ public class BookService {
             }
             logger.info("Transaction is crushed.");
 
+        }if(books!=null){
+        handler.allEntityNameToDesctop(books);}
+        else {
+            logger.info("books is null");
         }
-        handler.allEntityNameToDesctop(books);
 
 
     }

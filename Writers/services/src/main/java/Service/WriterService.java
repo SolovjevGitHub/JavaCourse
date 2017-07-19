@@ -40,8 +40,12 @@ public class WriterService {
             }
             logger.info("Transaction is crushed.");
         }
-        handler.allEntityToDesctop(bookWriters);
-
+        if(bookWriters!=null) {
+            handler.allEntityToDesctop(bookWriters);
+        }
+        else {
+            logger.info("bookWriters is null");
+        }
 
     }
 
@@ -65,7 +69,12 @@ public class WriterService {
             logger.info("Transaction is crushed.");
 
         }
+        if(bookWriters!=null){
         handler.allEntityNameToDesctop(bookWriters);
+        }
+        else {
+            logger.info("bookWriters is null");
+        }
 
 
     }
