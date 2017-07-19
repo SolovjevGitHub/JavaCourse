@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>entity</module>
-        <module>dblayer</module>
         <module>runner</module>
         <module>DAO</module>
         <module>services</module>

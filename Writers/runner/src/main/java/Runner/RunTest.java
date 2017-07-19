@@ -14,7 +14,7 @@ public class RunTest {
       //  writerService.getAllWritersName();
       //  writerService.getAllWriters();
        //  bookService.getAllBook();
-       //bookService.getAllBookTitle();
+       bookService.getAllBookTitle();
 
 
 
