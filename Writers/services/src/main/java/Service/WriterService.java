@@ -19,9 +19,7 @@ public class WriterService {
     private static Logger logger=Logger.getLogger(WriterService.class);
     private static HandlerClass handler=new HandlerClass();
 
-
-
-    public  void getAllWriters(){
+    private static List<BookWriter> getAllEntity(){
         Connection connection=null;
         List<BookWriter> bookWriters=null;
         try{
@@ -29,51 +27,51 @@ public class WriterService {
             connection.setAutoCommit(false);
             bookWriters=bookWriterDAO.getAllEntity(connection);
             connection.commit();
-        }
-        catch (SQLException ex) {
+        }catch (SQLException ex) {
             try {
+                logger.info("Transaction is crushed.");
+                System.out.println("Transaction is crushed.");
                 connection.rollback();
             } catch (SQLException e) {
-                logger.info("Failed to complete rollback");
-                ex.printStackTrace();
-
+                logger.info(e);
+                System.out.println("SQLException"+" in "+BookService.class);
             }
-            logger.info("Transaction is crushed.");
+            catch (NullPointerException e){
+                logger.info(e);
+                System.out.println("NullPointerException"+" in "+BookService.class);
+            }
+
+        } catch (ClassNotFoundException e) {
+            logger.info(e);
+            System.out.println("ClassNotFoundException"+" in "+BookService.class);
         }
+        return bookWriters;
+
+    }
+
+
+
+    public  void getAllWriters() throws NullPointerException{
+       List<BookWriter> bookWriters=getAllEntity();
+
         if(bookWriters!=null) {
             handler.allEntityToDesctop(bookWriters);
         }
         else {
             logger.info("bookWriters is null");
+            throw new NullPointerException();
         }
 
     }
 
-    public void getAllWritersName(){
-        Connection connection=null;
-        List<BookWriter> bookWriters=null;
-        try{
-            connection=ConnectionSingletone.getInstance().getConnection();
-            connection.setAutoCommit(false);
-            bookWriters=bookWriterDAO.getAllEntity(connection);
-            connection.commit();
-        }
-        catch (SQLException ex) {
-            try {
-                connection.rollback();
-            } catch (SQLException e) {
-                logger.info("Failed to complete rollback");
-                ex.printStackTrace();
-
-            }
-            logger.info("Transaction is crushed.");
-
-        }
+    public void getAllWritersName() throws NullPointerException{
+        List<BookWriter> bookWriters=getAllEntity();
         if(bookWriters!=null){
         handler.allEntityNameToDesctop(bookWriters);
         }
         else {
             logger.info("bookWriters is null");
+            throw new NullPointerException();
         }
 
 

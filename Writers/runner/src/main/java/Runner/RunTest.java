@@ -11,10 +11,10 @@ public class RunTest {
         WriterService writerService=new WriterService();
         BookService bookService=new BookService();
 
-      //  writerService.getAllWritersName();
+       writerService.getAllWritersName();
       //  writerService.getAllWriters();
-       //  bookService.getAllBook();
-       bookService.getAllBookTitle();
+       //bookService.getAllBook();
+       //bookService.getAllBookTitle();
 
 
 

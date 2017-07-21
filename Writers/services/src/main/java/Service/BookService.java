@@ -1,4 +1,5 @@
 package Service;
+
 import Connection.ConnectionSingletone;
 import bean.Book;
 import bean.BookWriter;
@@ -12,63 +13,66 @@ import java.util.List;
 
 
 public class BookService {
-    private static BookDAOImpl bookWriterDAO=new BookDAOImpl();
-    private static Logger logger=Logger.getLogger(WriterService.class);
-    private static HandlerClass handler=new HandlerClass();
+    private static BookDAOImpl bookDAO = new BookDAOImpl();
+    private static Logger logger = Logger.getLogger(WriterService.class);
+    private static HandlerClass handler = new HandlerClass();
 
-
-
-    public  void getAllBook(){
-        Connection connection=null;
-        List<Book> books=null;
-        try{
-            connection=ConnectionSingletone.getInstance().getConnection();
+    private static List<Book> getAllEntity() {
+        Connection connection = null;
+        List<Book> books = null;
+        try {
+            connection = ConnectionSingletone.getInstance().getConnection();
             connection.setAutoCommit(false);
-            books=bookWriterDAO.getAllEntity(connection);
+            books = bookDAO.getAllEntity(connection);
             connection.commit();
-        }
-        catch (SQLException ex) {
-            try {
+        } catch (SQLException ex) {
+            try{
+                logger.info("Transaction is crushed.");
+                System.out.println("Transaction is crushed.");
                 connection.rollback();
-            } catch (SQLException e) {
-                logger.info("Failed to complete rollback");
-                ex.printStackTrace();
-
             }
-            logger.info("Transaction is crushed.");
+            catch (SQLException e){
+               logger.info(e);
+                System.out.println("SQLException"+" in "+BookService.class);
+                }
+            catch (NullPointerException e){
+                logger.info(e);
+                System.out.println("NullPointerException"+" in "+BookService.class);
+            }
         }
-        if(books!=null){
-        handler.allEntityToDesctop(books);}
-        else {
-            logger.info("books is null");
+        catch (ClassNotFoundException ex){
+           logger.info(ex);
+            System.out.println("ClassNotFoundException"+" in "+BookService.class);
+        }
+
+        return books;
+    }
+
+
+    public void getAllBook()  {
+        List<Book> books = getAllEntity();
+
+        if (books != null) {
+            handler.allEntityToDesctop(books);
+        } else {
+            logger.info("NullPointerException"+" in "+"+BookService.class)");
+            throw new NullPointerException();
+
+
         }
 
 
     }
 
-    public void getAllBookTitle(){
-        Connection connection=null;
-        List<Book> books=null;
-        try{
-            connection=ConnectionSingletone.getInstance().getConnection();
-            connection.setAutoCommit(false);
-            books=bookWriterDAO.getAllEntity(connection);
-            connection.commit();
-        }
-        catch (SQLException ex) {
-            try {
-                connection.rollback();
-            } catch (SQLException e) {
-                logger.info("Failed to complete rollback");
-                ex.printStackTrace();
+    public void getAllBookTitle() {
+        List<Book> books=getAllEntity();
 
-            }
-            logger.info("Transaction is crushed.");
+        if (books != null) {
+            handler.allEntityNameToDesctop(books);
+        } else {
+            logger.info("NullPointerException"+" in "+"+BookService.class)");
+            throw new NullPointerException();
 
-        }if(books!=null){
-        handler.allEntityNameToDesctop(books);}
-        else {
-            logger.info("books is null");
         }
 
 

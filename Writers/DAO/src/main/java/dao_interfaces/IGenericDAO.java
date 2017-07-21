@@ -1,4 +1,4 @@
-package DAOinterfaces;
+package dao_interfaces;
 
 import java.sql.Connection;
 import java.util.List;

@@ -1,4 +1,4 @@
-package DAOinterfaces;
+package dao_interfaces;
 
 
 import bean.Book;
