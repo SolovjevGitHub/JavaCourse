@@ -1,5 +1,5 @@
-package Service;
-import Connection.ConnectionSingletone;
+package service;
+import сonnection.ConnectionSingletone;
 import bean.BookWriter;
 import com.mysql.jdbc.Connection;
 import handlers.HandlerClass;

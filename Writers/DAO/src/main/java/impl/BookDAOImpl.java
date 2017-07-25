@@ -2,7 +2,7 @@ package impl;
 
 
 import bean.Book;
-import dao_interfaces.IBookDAO;
+import daoapi.IBookDAO;
 import org.apache.log4j.Logger;
 
 

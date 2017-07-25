@@ -1,10 +1,7 @@
 package Runner;
 
-import Service.BookService;
-import Service.WriterService;
-import bean.BookWriter;
-
-import java.util.*;
+import service.BookService;
+import service.WriterService;
 
 public class RunTest {
     public static void main(String[] args) {

@@ -2,7 +2,7 @@ package impl;
 
 import bean.Book;
 import bean.BookWriter;
-import dao_interfaces.IWriterDAO;
+import daoapi.IWriterDAO;
 import org.apache.log4j.Logger;
 import java.sql.*;
 import java.sql.Connection;

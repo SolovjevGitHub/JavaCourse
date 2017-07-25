@@ -1,4 +1,4 @@
-package Connection;
+package сonnection;
 
 
 import com.mysql.jdbc.Connection;
@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public class ConnectionSingletone {
 
-    //Connection properties
+    //сonnection properties
     private static final String CONNECTION_URL = "jdbc:mysql://127.0.0.1:3306/mydb";
     private static final String CONNECTION_LOGIN = "root";
     private static final String CONNECTION_PASSWORD = "root";
