@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.intellisoft.library.iml" filepath="$PROJECT_DIR$/com.intellisoft.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.intellisoft.library.entity/com.intellisoft.library.entity.iml" filepath="$PROJECT_DIR$/com.intellisoft.library.entity/com.intellisoft.library.entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.intellisoft.library.hibernate.util/com.intellisoft.library.hibernate.util.iml" filepath="$PROJECT_DIR$/com.intellisoft.library.hibernate.util/com.intellisoft.library.hibernate.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.intellisoft.library.runner/com.intellisoft.library.runner.iml" filepath="$PROJECT_DIR$/com.intellisoft.library.runner/com.intellisoft.library.runner.iml" />
+    </modules>
+  </component>
+</project>
