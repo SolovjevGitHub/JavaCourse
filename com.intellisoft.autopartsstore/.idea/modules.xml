@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/com.intellisoft.autopartsstore.iml" filepath="$PROJECT_DIR$/com.intellisoft.autopartsstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/com.intellisoft.autopartsstore.entity.iml" filepath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/com.intellisoft.autopartsstore.entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.intellisoft.autopartsstore.hibernateconfig/com.intellisoft.autopartsstore.hibernateconfig.iml" filepath="$PROJECT_DIR$/com.intellisoft.autopartsstore.hibernateconfig/com.intellisoft.autopartsstore.hibernateconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.intellisoft.autopartsstore.runner/com.intellisoft.autopartsstore.runner.iml" filepath="$PROJECT_DIR$/com.intellisoft.autopartsstore.runner/com.intellisoft.autopartsstore.runner.iml" />
+    </modules>
+  </component>
+</project>
