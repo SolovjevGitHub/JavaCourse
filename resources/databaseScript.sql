@@ -1,0 +1,1 @@
+select * from autopart_categories;
