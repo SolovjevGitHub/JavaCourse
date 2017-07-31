@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="72f903cc-0257-41ae-ae95-0151d9549c31" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/Autopart.java" afterPath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/Autopart.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/CarModel.java" afterPath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/CarModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/Order.java" afterPath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/User.java" afterPath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/UserRole.java" afterPath="$PROJECT_DIR$/com.intellisoft.autopartsstore.entity/src/main/java/com/intellisoft/autopartsstore/entity/UserRole.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -886,12 +880,20 @@
       <updated>1501431382567</updated>
       <workItem from="1501431386711" duration="16852000" />
       <workItem from="1501449546656" duration="1733000" />
-      <workItem from="1501530316967" duration="230000" />
+      <workItem from="1501530316967" duration="387000" />
     </task>
+    <task id="LOCAL-00001" summary="all entitys implements Serializable">
+      <created>1501530606586</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1501530606586</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18815000" />
+    <option name="totallyTimeSpent" value="18972000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -969,7 +971,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="all entitys implements Serializable" />
+    <option name="LAST_COMMIT_MESSAGE" value="all entitys implements Serializable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
