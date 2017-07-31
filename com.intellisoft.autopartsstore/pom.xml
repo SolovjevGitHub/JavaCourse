@@ -12,6 +12,7 @@
         <module>com.intellisoft.autopartsstore.runner</module>
         <module>com.intellisoft.autopartsstore.entity</module>
         <module>com.intellisoft.autopartsstore.hibernateconfig</module>
+        <module>com.intellisoft.autopartsstore.dao</module>
     </modules>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
