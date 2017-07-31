@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="com.intellisoft.autopartsstore.dao" />
         <module name="com.intellisoft.autopartsstore.entity" />
         <module name="com.intellisoft.autopartsstore.hibernateconfig" />
         <module name="com.intellisoft.autopartsstore.runner" />
@@ -13,6 +14,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com.intellisoft.autopartsstore" target="1.5" />
+      <module name="com.intellisoft.autopartsstore.dao" target="1.5" />
       <module name="com.intellisoft.autopartsstore.entity" target="1.5" />
       <module name="com.intellisoft.autopartsstore.hibernateconfig" target="1.5" />
       <module name="com.intellisoft.autopartsstore.runner" target="1.5" />

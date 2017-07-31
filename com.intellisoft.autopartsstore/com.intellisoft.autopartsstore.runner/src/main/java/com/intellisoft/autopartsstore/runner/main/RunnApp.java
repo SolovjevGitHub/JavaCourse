@@ -42,7 +42,7 @@ public class RunnApp {
 
 
         AutopartBrand autopartBrand=new AutopartBrand();
-        autopartBrand.setName("Limforder");
+        autopartBrand.setName("Limforderккккккккккккк");
         session.saveOrUpdate(autopartBrand);
 
         AutopartCategories autopartCategories=new AutopartCategories();
