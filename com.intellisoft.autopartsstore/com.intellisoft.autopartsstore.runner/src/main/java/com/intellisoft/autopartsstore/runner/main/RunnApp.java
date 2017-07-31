@@ -15,6 +15,7 @@ import java.util.ArrayList;
  */
 public class RunnApp {
     public static void main(String[] args){
+        System.out.println("go");
         SessionFactory sessionFactory= HibernateSessionFactory.getHibernateSessionFactory().getSessionFactory();
         Session session=sessionFactory.openSession();
         Transaction transaction=session.beginTransaction();
