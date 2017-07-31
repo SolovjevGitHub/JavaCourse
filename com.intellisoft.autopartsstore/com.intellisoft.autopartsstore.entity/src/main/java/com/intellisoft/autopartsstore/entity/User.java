@@ -2,17 +2,16 @@ package com.intellisoft.autopartsstore.entity;
 
 import javax.persistence.*;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
-/**
- * Created by Сирожа и Маха on 30.07.2017.
- */
+
 @Entity
 @Table(name = "users")
-public class User {
+public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     @Column(name = "id")
