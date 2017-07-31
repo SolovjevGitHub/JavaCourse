@@ -168,7 +168,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -428,7 +432,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.51954025" />
-    <property name="settings.editor.selected.configurable" value="vcs.Subversion" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -880,7 +884,7 @@
       <updated>1501431382567</updated>
       <workItem from="1501431386711" duration="16852000" />
       <workItem from="1501449546656" duration="1733000" />
-      <workItem from="1501530316967" duration="387000" />
+      <workItem from="1501530316967" duration="551000" />
     </task>
     <task id="LOCAL-00001" summary="all entitys implements Serializable">
       <created>1501530606586</created>
@@ -889,11 +893,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501530606586</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="all entitys implements Serializable">
+      <created>1501530714276</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1501530714276</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18972000" />
+    <option name="totallyTimeSpent" value="19136000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
